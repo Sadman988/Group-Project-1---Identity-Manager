@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSC4110</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'> 
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">CSC4110-G8</a>
+    <input type="checkbox" id="check">
+    <label for="check" class="icon-nav">
+      <i class='bx bx-menu' id="menu-icon"></i>
+       <i class='bx bx-x' id="close-icon"></i>
+     </label>
+     <nav class="navbar">
+      <a href="#about">About</a>
+     </nav>
+   </header>
+
+  <section id="profile">
+    <div id="particles-js"></div>
+    <div class="title-container">
+      <h3 class="title_name">This site is for educational purpose only!</h3>
+    </div>
+  
+  </section>
+ 
+  <section id="projects">
+    <p class="section__text__p1">Browse Our Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/Project_Sign_01.svg"
+              alt="Project 1"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Project One</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/Sadman988/Group-Project-1---Identity-Manager'"
+            >
+              Github
+            </button>
+            <a href="assets/Group 8 Project 1.zip" class="btn btn-color-2 project-btn" id="downloadBtn">
+              Download
+            </a>
+          </div>
+          
+          <!-- Modal for custom acknowledgment -->
+          <div id="customModal" style="display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);">
+            <div style="background-color: white; padding: 20px; margin: 10% auto; width: 50%; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);">
+              <h2 style="font-size: 24px; font-weight: bold; text-align: center;">User Agreement</h2>
+              <p style="font-size: 16px; text-align: justify;">
+                End User License Agreement (EULA)
+          
+          Data Privacy: Your personal data is kept secure, but Forestview is not responsible for security breaches beyond their control.<br><br>
+          
+          Sharing the Application: You cannot copy, share, sell, or distribute the application or its data without written permission from Forestview. Sharing login details or data is prohibited.<br><br>
+          
+          Using the App: You are not allowed to sell or distribute data from the app without permission. Misuse may lead to legal action.<br><br>
+          
+          Indemnity: You agree to protect Forestview from legal claims or damages caused by your use of the app. Forestview is not liable for security incidents.<br><br>
+          
+          Security Measures: Forestview regularly monitors for security vulnerabilities and may update practices as threats and technology evolve.<br><br>
+          
+          Compliance: The app adheres to industry security standards, which may change as laws and technology progress.<br><br>
+          
+          By using the app, you agree to the terms. If you disagree, you should stop using it.
+              </p>
+              <p style="font-size: 16px; text-align: center;">I agree to download the file.</p>
+              <div style="text-align: center; margin-top: 20px;">
+                <button id="agreeBtn" style="padding: 10px 20px; font-size: 16px; cursor: pointer;">I Agree</button>
+                <button id="cancelBtn" style="padding: 10px 20px; font-size: 16px; cursor: pointer; margin-left: 10px;">Cancel</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+            src="./assets/Project_Sign_01.svg"
+              alt="Project 2"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Project Two</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/'"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href=''"
+            >
+              Download
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+            src="./assets/Project_Sign_01.svg"
+              alt="Project 3"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Project Three</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/'"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href=''"
+            >
+              Download
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    
+    <section id="about">
+      <h1 class="title">About Projects</h1>
+      <div class="text-container">
+        <h2>Project 1</h2>
+        <p>
+          This Identity Manager project is a Python-based application designed to efficiently manage 
+          personal information. Built with a user-friendly interface using Tkinter, it allows 
+          users to add, search, remove, and display individuals' data such as name, SSN, phone 
+          number, address, and more. The application ensures data validation, including proper 
+          formatting for phone numbers, SSNs, and other fields, to maintain data accuracy. 
+          The data is securely stored in a JSON file for easy access and modification. It's 
+          ideal for small-scale data management and serves as an excellent example of how Python 
+          can handle everyday tasks through simple, interactive applications.
+        </p>
+      </div>
+    </section>
+
+    
+  <section id="contact">
+    <footer>
+      <div class="copyright">
+        <p>Copyright &#169; 2024 CSC4110 Group-8 Students at WSU. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </section>
+
+ 
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+  <script src="app.js"></script>
+
+  <script>
+    document.getElementById('downloadBtn').addEventListener('click', function (event) {
+      event.preventDefault(); // Prevent the default download action
+  
+      // Show the custom modal
+      document.getElementById('customModal').style.display = 'block';
+    });
+  
+    document.getElementById('agreeBtn').addEventListener('click', function () {
+      // If the user agrees, trigger the download
+      document.getElementById('customModal').style.display = 'none'; // Close the modal
+      window.location.href = document.getElementById('downloadBtn').href; // Trigger the download
+    });
+  
+    document.getElementById('cancelBtn').addEventListener('click', function () {
+      // If the user cancels, close the modal
+      document.getElementById('customModal').style.display = 'none';
+    });
+  </script>
+</body>
+</html>

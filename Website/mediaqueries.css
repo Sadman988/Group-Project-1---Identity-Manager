@@ -1,0 +1,264 @@
+@media screen and (max-width: 1400px) {
+  /* #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  } */
+
+  .about-containers {
+    flex-wrap: wrap;
+  }
+
+  #projects {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #profile,
+  #about,
+  #projects {
+    display: block;
+    margin: 0;
+    padding: 100px 0 0 0;
+    position: relative;
+    height: auto;
+  }
+
+  .section-container {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  #particles-js {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  #projects {
+    display: block;
+    margin: 0;
+    padding: 100px;
+    position: relative;
+  }
+}
+
+@media (max-width: 1176px) {
+  #projects {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 920px) {
+  .icon-nav {
+    display: inline-flex;
+  }
+
+  #check:checked ~ .icon-nav #menu-icon {
+    display: none;
+  }
+
+  #check:checked ~ .icon-nav #close-icon {
+    display: block;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+
+  #close-icon {
+    display: none;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(20, 130, 158, 0.363);
+    backdrop-filter: blur(70px);
+    box-shadow: -0.5rem 1rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: height 0.3s ease;
+    height: 0;
+  }
+
+  #check:checked ~ .navbar {
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+    text-align: center;
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition-delay: calc(0.15s * var(--i));
+  }
+
+  #check:checked ~ .navbar a {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .navbar a:hover {
+    background-color: #ffffff;
+    color: #5ddbb6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (max-width: 800px) {
+  #projects {
+    display: block;
+    margin: 0;
+    padding: 100px;
+    position: relative;
+  }
+
+  .copyright p {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #profile {
+    display: block;
+    margin: 0;
+    padding: 100px 0 0 0;
+    position: relative;
+    height: auto;
+  }
+
+  #projects {
+    margin: 0;
+    margin-top: 8rem;
+    padding: 0 15px;
+  }
+
+  #particles-js {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  h1.title {
+    font-size: 30px;
+  }
+
+  .container {
+    width: 80%;
+    text-align: center;
+  }
+
+  .container .text {
+    font-size: 20px;
+  }
+
+  .section__text h2 {
+    display: inline-block;
+    font-size: 1.5rem;
+  }
+
+  .text.sec-text {
+    text-align: center;
+  }
+
+  article {
+    font-size: 1rem;
+  }
+
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+
+  .contact-info-container {
+    margin: 0;
+  }
+
+  .section__pic-container {
+    margin: 0 auto;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .section__pic-container img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 15px solid #ffffff;
+    transition: none;
+  }
+
+  .section__pic-container:hover img {
+    transform: none;
+  }
+
+  .text-container p {
+    font-size: 14px;
+  }
+
+  .section__text {
+    margin-top: 10px;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .details-container {
+    margin-top: 10px;
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  .top {
+    display: none;
+  }
+
+  .copyright p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 426px) {
+  .project-info h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 370px) {
+  .project-info h2 {
+    font-size: 16px;
+  }
+
+  .project-links .btn {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #contact {
+    padding: 1rem;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+}
